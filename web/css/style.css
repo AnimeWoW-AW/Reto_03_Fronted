@@ -1,0 +1,218 @@
+/*================ GLOBAL ================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    font-size: 80%;
+    background-image: url(../Images/Fondo3.jpg);
+    background-size: 100%;
+    width: 100%;
+    opacity: 0.90;
+}
+
+/*================ COMPANY NAME ================*/
+#header{
+    height: 90px;
+    align-items: center;
+}
+
+.company_name {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+    }
+    .company_name {
+        text-align: center;
+    }
+
+    #etiqueta{
+        color: white;
+    }
+
+#logoShop{
+    filter: invert(0.6) sepia(1) hue-rotate(0deg) contrast(200%) drop-shadow(16px 16px 20px #f58003) invert(5%);;
+}
+
+/*================ NAVIGATION TAB / MENU ================*/
+
+#menu li > a{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#inactiveOption{
+    color: white;
+}
+
+#activeOption{
+    color: white;
+    background-color: #f58003;
+}
+
+/*================ FORM CONTAINER ================*/
+
+#boxForm{
+    font-weight: 100px;
+    align-items: center;
+    width: auto;
+    max-width: 600px;
+    min-height: auto;
+    height: auto;
+    border-radius: 15px;
+    margin: 1% auto;
+    padding: 1%; /* grande */
+    background-image: linear-gradient(-225deg, #eaec65 30%, #f58003 70%);
+    max-width: 600px;
+}
+
+
+#inventory{
+    align-items: center;
+    width: auto;
+    min-height: auto;
+    height: auto;
+    border-radius: 10px;
+    margin: auto;
+    padding: 1%; /* grande */
+    background-image: linear-gradient(-225deg, #eaec65 30%, #f58003 70%);
+    max-width: 1300px;
+}
+
+#orders{
+    align-items: center;
+    width: auto;
+    min-height: auto;
+    height: auto;
+    border-radius: 10px;
+    margin: auto;
+    padding: 1%; /* grande */
+    background-image: linear-gradient(-225deg, #eaec65 30%, #f58003 70%);
+    max-width: 1000px;
+}
+
+/*================ MAIN BUTTON ================*/
+#btnMain {
+    display: inline-block;
+    color: #000000;
+    width: auto;
+    max-width: 280px;
+    height: 50px;
+    padding: 0 20px;
+    background: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    margin: 5% auto;
+    letter-spacing: 0.05em;
+    border-radius: 5px;
+}
+
+/* buttons hover / click above */
+#btnMain:hover {
+    transform: translatey(3px);
+    background: transparent;
+    background: none;
+    border-color: #ffffff;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+#btnMainInventory:hover {
+    transform: translatey(3px);
+    background: transparent;
+    background: none;
+    border-color: #ffffff;
+    border-radius: 5px;
+    border: 2px solid #f58003;
+    color: #f58003;
+    font-size: large;
+    font-weight: bold;
+}
+
+/*================ FOCUS ================*/
+#email :focus {
+    transform: translateX(-2px);
+    border-radius: 5px;
+    background-image: linear-gradient(-225deg, #ffffff 30%, #ffffff 70%);
+    border-style: outset;
+    /* border-color: #f58003; */
+    border-color: #f80000;
+}
+
+/*================ LOGO INPUTS ================*/
+#logoInput{
+    background: #f58003;
+}
+
+#showPassword{
+    background: white;
+    border: null;
+}
+
+/*================ LIST INPUTS ================*/
+select{
+    width: 100px;
+    height: auto;
+}
+
+/*================ FOOTER ================*/
+
+footer{
+    background-color: black;
+    min-height: 15px;
+    height: auto;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    font-size: 1px;
+}
+
+#socialIcons{
+    font-size: 20px;
+    padding: 0 8px;
+    color: white;
+}
+
+#editForm{
+    background-color: white;
+}
+
+/*================ CONTACT ================*/
+#image{
+    width: 300px;
+    height: 200px;
+}
+
+#commentUser{
+    resize: none;
+}
+
+#contact{
+    font-weight: 100px;
+    align-items: center;
+    width: 50%;
+    max-width: 600px;
+    height: 350px;
+    border-radius: 15px;
+    padding: 1%; /* grande */
+    background-image: linear-gradient(-225deg, #eaec65 30%, #f58003 70%);
+    max-width: 600px;
+}
+

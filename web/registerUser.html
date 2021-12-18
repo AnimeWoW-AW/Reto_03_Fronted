@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <link rel="stylesheet" href="css/login.css" /> -->
+
+    <title>Login_Zorillo LTDA</title>
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" /> -->
+
+    <!-- Bootstrap CSS / ICONS -->
+    <!--Icon de Bootstrap https://icons.getbootstrap.com-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+    <!--================================-->
+    <!--============ HEADER ============-->
+    <!--================================-->
+
+    <header class="container-fluid bg-dark d-flex justify-content-center" id="header">
+        <img src="Images/Logo_Tienda2.png" width="80" height="80" id=logoShop>
+        <p>...</p>
+        <div class="company_name">Zorillo LTDA</div>
+    </header>
+
+    <!--================================================-->
+    <!--============ NAVIGATION TAB / MENU ============--->
+    <!--================================================-->
+
+    <ul class="nav nav-tabs" id="menu">
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html" id="inactiveOption">Ingresar</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="registerUser.html" id="activeOption">Registrarse</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="registerEmployee.html" id="inactiveOption">Registro Funcionario</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="inventoryUser.html" id="inactiveOption">Admon Usuarios</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="inventoryProduct.html" id="inactiveOption">Productos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="createOrder.html" id="inactiveOption">Crear Orden</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="listOrder.html" id="inactiveOption">Listado Ordenes</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"
+                id="inactiveOption">Idiomas</a>
+            <ul class="dropdown-menu" id="itemList">
+                <li><a class="dropdown-item" href="#">Español</a></li>
+                <li><a class="dropdown-item" href="#">Ingles</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html" id="inactiveOption">Contactanos</a>
+        </li>
+    </ul>
+
+    <!--====================================-->
+    <!--============ LOGIN FORM ============-->
+    <!--====================================-->
+
+    <div class="container-fluid">
+        <form id="formf">
+            <div class="row justify-content-center mt-5">
+                <div id="boxForm" class="col-6 p-5 rounded text-black">
+
+                    <!--============ Title Form ============-->
+                    <div class="text-center">
+                        <h2 class="text-black">Crear Cuenta</h2>
+                    </div>
+
+                    <!--============ Input User ============-->
+                    <div class="form-group">
+                        <label for="username">Nombre</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="logoInput">
+                                <i class="bi bi-person-bounding-box text-black" id="logoPeople"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="@ Nombre" name="username" id="username"
+                                required="required">
+                        </div>
+                    </div>
+
+                    <!--============ Email ============-->
+                    <div class="form-group">
+                        <label for="useremail">E-mail</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="logoInput">
+                                <i class="bi bi-envelope-fill text-black" id="logoPeople">
+                                </i></span>
+                            <input type="email" class="form-control" placeholder="@ Usuario" name="useremail"
+                                id="useremail" required="required">
+                        </div>
+                    </div>
+
+                    <!--============ Input Password ============-->
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="logoInput"><i class="bi bi-key text-black"></i></span>
+                            <input type="password" class="form-control" placeholder="Contraseña" name="password"
+                                id="password" required="required">
+                        </div>
+                    </div>
+
+                    <!--============ Input Confirms Password ============-->
+                    <div class="form-group">
+                        <label for="passwordrepeat">Confirmar Contraseña</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="logoInput"><i class="bi bi-key text-black"></i></span>
+                            <input type="password" class="form-control" placeholder="Contraseña" name="passwordrepeat"
+                                id="passwordrepeat" required="required">
+                        </div>
+                    </div>
+
+                    <!--Este botton no elimina los datos ingresado-->
+                    <div class="form-group text-center">
+                        <input id="btnMain" type="submit" name="submit" class="btn btn-info btn-md"
+                            value="Registrar Usuario" />
+                    </div>
+
+                    <!--============ Label Register ============-->
+                    <div class="text-center">
+                        <p class="text-center text-black">¿Ya tienes cuenta?
+                            <a href="index.html" style="color: blue;">Ingresa Aqui</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--====================================-->
+    <!--============ FOOTER ============-->
+    <!--====================================-->
+
+    <footer class="w-100 d-flex align-items-center justify-content-center flex-wrap">
+        <p class="fs-6 px-3 pt-3">Zorillo LTDA &copy; Todos los Derechos Reservados 2021</p>
+        <div id="socialIcons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+    </footer>
+
+
+    <!--=====================================-->
+    <!--============ JAVA SCRIPT ============-->
+    <!--=====================================-->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
+        </script>
+
+    <!--Para Cmponentes Bootstrap que requieren Java Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Function with JS -->
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/registerUser.js"></script>
+
+</body>
+
+</html>
